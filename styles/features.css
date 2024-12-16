@@ -1,0 +1,48 @@
+.features {
+    margin-top: 1rem;
+}
+
+.features__title {
+    text-align: center;
+    line-height: 1;
+}
+
+.features__container {
+    display: flex; /* Flexbox para organizar os itens */
+    justify-content: space-between; /* Distribui os itens horizontalmente */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    gap: 3rem; /* Espaço entre os elementos */
+    margin-top: 5rem;
+}
+
+.features__item {
+    display: flex; /* Flexbox para alinhar os elementos */
+    flex-direction: column; /* Coloca os elementos (imagem, título, texto) em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Alinha o texto centralmente */
+    margin: 2rem 0; /* Espaço vertical */
+    max-width: 30rem;
+}
+
+.features__item-image {
+    margin: 0 auto 1rem; /* Adiciona margem apenas abaixo da imagem */
+    display: block;
+    width: 4rem; /* Define tamanho da imagem */
+}
+
+.features__item-title {
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.features__item-content {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .features {
+        margin-top: 8rem;
+    }
+}
